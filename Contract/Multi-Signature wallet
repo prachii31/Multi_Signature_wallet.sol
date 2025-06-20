@@ -287,7 +287,6 @@ contract MultiSignatureWallet is ReentrancyGuard {
     receive() external payable {
         emit Deposit(msg.sender, msg.value, address(this).balance);
     }
-    
     /**
      * @dev Fallback function
      */
@@ -295,3 +294,4 @@ contract MultiSignatureWallet is ReentrancyGuard {
         emit Deposit(msg.sender, msg.value, address(this).balance);
     }
 }
+contract address : 0xe467c66747d758d2e72BBf0a401fBf5ada7c7502
